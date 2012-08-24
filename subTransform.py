@@ -44,7 +44,7 @@ def fromTuple(t):
     return '%d:%d:%d,%03d' %t
 
 def tupleToMillisecs(t):
-    return t[3] + t[2] *1000 + t[1] *1000 * 60 + t[0] * 1000 * 36000
+    return t[3] + t[2] *1000 + t[1] *1000 * 60 + t[0] * 1000 * 60 * 60
 
 def millisecsToTuple(n):
     return ( n/ (1000*60*60), n/ (1000*60) % 60 , n/1000 % 60 , n %1000)

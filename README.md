@@ -1,6 +1,8 @@
 Use subTransform.py to sync .srt files to the correct movie times
 (see the help / docstring for the command line options).
 
+REQUIRED: Numpy.
+
 The idea behind this simple program is that the mapping between the 
 srt file times (ST) and the movie times (MT) is calculated by an affine transformation:
 ST[i] = a*MT[i]  + b.
