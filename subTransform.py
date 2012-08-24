@@ -85,7 +85,7 @@ def parseSrt(fn):
             sub.end = times[1]
         if state > 2:
             sub.txt += line + '\n'
-    if sub not in subs: subs.append(sub)
+    if sub not in subs and sub.txt: subs.append(sub)
     return subs
 
 
